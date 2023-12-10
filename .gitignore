@@ -3,3 +3,4 @@ _build/
 .merlin
 *.coverage
 _coverage/
+.envrc

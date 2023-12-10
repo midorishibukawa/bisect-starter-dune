@@ -9,5 +9,6 @@ maintainer: "Anton Bachin <antonbachin@yahoo.com>"
 depends: [
   "bisect_ppx" {dev & >= "2.5.0"}
   "dune" {>= "2.7.0"}
+  "ppx_inline_test"
   "ocaml"
 ]

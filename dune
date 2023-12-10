@@ -3,6 +3,14 @@
  (modules hello)
  (instrumentation (backend bisect_ppx)))
 
+(library
+ (name inline_tester)
+ (modules inline_tester)
+ (inline_tests)
+ (libraries hello)
+ (preprocess (pps ppx_inline_test))
+ (instrumentation (backend bisect_ppx)))
+
 (executable
  (name tester)
  (modules tester)
